@@ -1,0 +1,22 @@
+<!-- <div class="content_div">
+    <div *ngFor="let product of hasData">
+    <a href="/">
+      <div class="product_div" id="{{product.}}">
+        <img src="{{product.img}}" class="img_style">
+        <div class="product_details_box">
+          <div class="product_details">Color: {{product.color}}</div>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div> -->
+
+  <div class="body1" *ngFor="let arr of hasData?.News">
+    <div><img src="{{arr?.images}}" alt=""></div>
+    <div>
+      {{arr?.header}}
+    </div>
+  </div>
+  <div>
+  <img src="/src/assets/images/politics1.jpg" alt="">
+  </div>

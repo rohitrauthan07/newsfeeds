@@ -26,7 +26,18 @@
       margin-top: 2px;
   }
   
-  
+  .dropdown-menu{
+    text-align: center;
+    background-color: lavender;
+  }
+    .dropdown:hover>.dropdown-menu{
+    display:block;
+    }
+    .li{
+      padding: 4px;
+      color:gray;
+    }
+   
   
   
        
