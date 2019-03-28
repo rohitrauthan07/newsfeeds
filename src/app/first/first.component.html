@@ -1,0 +1,12 @@
+
+<p>
+  Hey! First works.
+</p>
+<button (click)="childclick($event)">Click Here</button><br>
+<input type="text" placeholder="first" [(ngModel)]="name"  (ngModelChange) = "childclick($event)" >
+<table *ngFor= "let arr of containsData"> 
+  <tbody>
+  <td>{{arr.Category}}</td>
+  </tbody>
+</table> 
+
