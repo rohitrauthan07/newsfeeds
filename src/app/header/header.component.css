@@ -1,0 +1,24 @@
+.navbar-fixed-top
+{
+    font-family: EuclidFlexMed;
+    letter-spacing: 0.12em;
+    text-align: center;
+    font-size: 10.5px;
+    position: sticky;
+}
+.navbar-fixed-top a span { 
+    line-height: 30px;
+}
+.navbar-fixed-top :hover
+{
+text-decoration: none;
+}
+
+.navbar-default{
+    line-height: 30px;
+}
+ .newsimg{
+     height: 40px;
+     width: 100%;
+
+ }

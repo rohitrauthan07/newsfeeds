@@ -1,0 +1,32 @@
+
+         
+          /* Create three equal columns that floats next to each other */
+       
+          
+          .column a:hover {
+            background-color: #ddd;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          .Aheader {
+    text-align: left;
+    color: white;
+    font-size: 10px;
+  }
+     
+  .sticky{
+      text-align:center;
+      font-size: 20px;
+      background-color: blueviolet;
+      margin-top: 2px;
+  }
+  
+  
+  
+  
+       
