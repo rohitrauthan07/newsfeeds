@@ -2,6 +2,14 @@
          
           /* Create three equal columns that floats next to each other */
        
+          .gif{
+            width: 603px;
+            height: 404px;
+            padding-left:10px; 
+          
+        
+        }  
+          
           
           .column a:hover {
             background-color: #ddd;
@@ -26,6 +34,33 @@
       margin-top: 2px;
   }
   
+   
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+  
+.buttonhero {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
   
   
   

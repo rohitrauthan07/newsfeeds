@@ -8,23 +8,48 @@
 </div>
 <nav class="navbar-fixed-top navbar-default">
   <div class="row">
+    <div class="col-sm-1">
+        <div class="dropdown ">
+            <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">MENU<span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu components" >
+              <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HOME</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-user-circle" style="font-size:24px"></i> Politics</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class='fas fa-football-ball' style='font-size:24px'></i>Sports</a></li> -->
+              <div class="drop" *ngFor="let arr of hasData?.Category">
+              <li role="presentation"><a role="menuitem" abindex="-1" (click) = "onClick(arr)"><b>{{arr?.name}}</b> </a> </li>
+            </div>
+              <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Politics</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sports</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Food</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">International</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Entertainment</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Finance</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Religion</a></li>    
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lifestyle</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Business</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tech</a></li> -->
+            </ul>
+          </div>
+      
+    </div>
     <div class="col-sm-2">
       <img class="newsimg" src="assets/icon.jpg" alt="logo">
     </div>
 
     <div class="col-sm-1">
 
-      <a target="_blank" href=""><span ><b>| NEWS24 |</b></span></a>
+        <a role="menuitem" tabindex="-1" href="#">HOME</a>
   
     </div>
-    <div class="col-sm-1">
+    <!-- <div class="col-sm-1">
 
       <a target="_blank" href="https://www.olx.co.za/"><span ><b>| OLX |</b></span></a>
   
     </div>
     <div class="col-sm-1">
 
-      <a target="_blank" href="https://www.careers24.com/"><span ><b>| CAREERS24 |</b></span></a>
+      <a target="_blank" href="https://www.careers24.com/"><span ><b>| CAREER |</b></span></a>
   
     </div>
     <div class="col-sm-1">
@@ -36,25 +61,23 @@
 
       <a target="_blank" href="https://superbalist.com/"><span ><b>| SHOPPING |</b></span></a>
   
-    </div>
-    <div class="col-sm-1">
-
-      <a target="_blank" href="https://www.autotrader.co.za/"><span ><b>| CAR SALE |</b></span></a>
-  
-    </div>
+    </div> -->
+   
     <div class="col-sm-1 ">
     </div>
     <div class="col-sm-1">
 
-      <button target="_blank" href="https://www.autotrader.co.za/"><span >LOGIN</span></button>
+      <button class="loginb" target="_blank" href="https://www.autotrader.co.za/"><span >LOGIN</span></button>
   
     </div>
     <div class="col-sm-1">
 
-      <button target="_blank" href="https://www.autotrader.co.za/"><span >REGISTER</span></button>
+      <button class="loginb" target="_blank" href="https://www.autotrader.co.za/"><span >REGISTER</span></button>
   
     </div>
   </div>
+
+
 
 
 </nav>

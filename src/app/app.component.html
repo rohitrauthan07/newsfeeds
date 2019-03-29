@@ -1,16 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-
-  <!-- <nav>
-    <img src="../assets/BFF.jpg" routerLink="/first" routerLinkActive="thumbnail"><br> //This is for routing.
-    
-  </nav>
-
-
- 
- <router-outlet></router-outlet> -->
- <app-first (childData)="message($event)"></app-first>
- <app-second  [parentComponent]="child2Data"></app-second>
+ <app-header></app-header>
+ <!-- <app-secondpage></app-secondpage> -->
+<router-outlet></router-outlet>

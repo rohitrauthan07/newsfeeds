@@ -1,0 +1,14 @@
+<div class="imagemain">
+  <div *ngIf='this.dataFetched'>
+    <div class="headingsec">
+      <hr>
+      <h1>{{this.cardObject.header}}</h1>
+      <hr>
+    </div>
+    <div id="imagesec" class="img-responsive"><img src="{{ this.cardObject.image }}"></div>
+
+    <div class="descsec">
+      <p>{{ this.cardObject.description }}</p>
+    </div>
+  </div>
+</div>

@@ -22,3 +22,23 @@ text-decoration: none;
      width: 100%;
 
  }
+ .loginb{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+
+ #menu1{
+     margin-left: 20px;
+     margin-top: 6px;
+ }
+ .drop{
+     margin-left: 30px;
+ }
