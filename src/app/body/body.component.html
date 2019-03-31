@@ -1,0 +1,39 @@
+<!-- <div class="content_div">
+    <div *ngFor="let product of hasData">
+    <a href="/">
+      <div class="product_div" id="{{product.}}">
+        <img src="{{product.img}}" class="img_style">
+        <div class="product_details_box">
+          <div class="product_details">Color: {{product.color}}</div>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div> -->
+
+
+
+<div class="cards" *ngFor="let arr of filternews">
+
+  <div class="row ">
+    <div class="col-sm-4">
+
+
+      <img onmouseover="" style="cursor: pointer;" (click)="onSelect(arr)" (click)="onSelect(arr)" class="cardi"
+        src="{{arr?.image}}" alt="">
+      <hr>
+    </div>
+    <div class="col-sm-8">
+      <div onmouseover="" style="cursor: pointer;" (click)="onSelect(arr)"> <b> {{arr?.header}} </b>
+      </div>
+      <div class="like-content">
+        <button class="btn-secondary like-review">
+          <i class="fa fa-heart" aria-hidden="true"></i> Like
+        </button>
+        <br>
+        <hr>
+
+      </div>
+
+</div>
+</div>

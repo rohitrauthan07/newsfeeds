@@ -1,0 +1,59 @@
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.footer-color-change {
+    -webkit-animation: footer-color-change 20s linear infinite alternate both;
+    animation: footer-color-change 20s linear infinite alternate both;
+}
+.bottom-contact {
+    padding: 20px 0;
+    background: #33cccc;
+}
+
+element.style {
+}
+::selection {
+    background: #33cccc;
+    text-shadow: none;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bottom-contact a {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 15px;
+    letter-spacing: 0px;
+    font-weight: 300;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+.container-small{
+    display: inline;
+}
+
+.social-icons div a i{
+    border-radius: 50%;
+    border: solid 2px #FFF;
+    text-align: center;
+    line-height: 70px;
+
+    width: 70px;
+    height: 70px;
+}
