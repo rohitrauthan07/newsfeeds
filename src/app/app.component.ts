@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  url= 'https://angularfinal-21.firebaseio.com/.json';
   title = 'News';
 }
