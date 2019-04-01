@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
 
     if (localStorage.getItem('isLoggedIn') == "true") {
-      this.router.navigate(['/Signin']);
+      // this.router.navigate(['/Signin']);
       console.log(localStorage.getItem('isLoggedIn'));
     }
 

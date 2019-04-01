@@ -26,12 +26,23 @@ import {FormService} from './form.service';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { SigninComponent } from './signin/signin.component';
+import { LogoutComponent } from './logout/logout.component';
+import { LogincompoComponent } from './logincompo/logincompo.component';
+//import{ FirstbodyComponent} from './firstbody/firstbody.component';
+import { NewbodyComponent } from './newbody/newbody.component';
+import { BodydataComponent } from './bodydata/bodydata.component';
+import { Secondbody2Component } from './secondbody2/secondbody2.component';
+
 const appRoutes: Routes = [
-  { path: 'home/:id', component: BodyComponent },
-  // {path: 'home', component: AppComponent },
+  {path: '', component: NewbodyComponent},
+  {path: 'newbody', component: NewbodyComponent},
+  { path: 'home/:id', component: BodydataComponent },
+   {path: 'home', component: AppComponent },
   { path: 'app-secondpage/:description',component: SecondpageComponent},
   { path: 'login', component: LoginComponent },
-  { path: 'signin', component: SigninComponent, canActivate: [AuthGuard] }
+  { path: 'signin', component: SigninComponent, canActivate: [AuthGuard] },
+  {path:'body/:id',component: BodyComponent},
+  
 ]
 
 @NgModule({
@@ -47,6 +58,12 @@ const appRoutes: Routes = [
     RegisterComponent,
     routingComponents,
     SigninComponent,
+    LogoutComponent,
+    LogincompoComponent,
+    NewbodyComponent,
+    BodydataComponent,
+    Secondbody2Component,
+
    
   ],
   imports: [

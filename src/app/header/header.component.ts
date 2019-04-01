@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {  ServicesService } from '../services.service';
+import { ServicesService } from '../services.service';
 import { element } from '@angular/core/src/render3';
-import{Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -15,10 +15,10 @@ export class HeaderComponent implements OnInit {
   parentComponent: any;
   message: any;
 
-  constructor(private containsData: ServicesService,private router:Router) { }
+  constructor(private containsData: ServicesService, private router: Router) { }
 
-  sendPushNotification(){
-    
+  sendPushNotification() {
+
     // this.containsData.sendPushMessage("Web push notification", "HI, Firebase test messsage");
   }
   ngOnInit() {
@@ -26,19 +26,19 @@ export class HeaderComponent implements OnInit {
     this.containsData.requestPermission(userId);
     this.containsData.receiveMessage();
     this.message = this.containsData.currentMessage;
-    this.filterData= this.containsData.getData().subscribe(data =>{
+    this.filterData = this.containsData.getData().subscribe(data => {
       console.log("data  ", data);
-      
+
       this.hasData = data
       console.log(this.hasData);
     });
     console.log("hi");
-    
+
   }
-  onClick(event){
+  onClick(event) {
     console.log(event);
-   this.router.navigate(['home/' + event.id]);
-    
+    this.router.navigate(['home/' + event.id]);
+
   }
 
 }

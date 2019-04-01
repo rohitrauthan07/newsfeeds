@@ -1,15 +1,15 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ServicesService } from '../services.service';
 import { element } from '@angular/core/src/render3';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'app-body',
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css']
+  selector: 'app-bodydata',
+  templateUrl: './bodydata.component.html',
+  styleUrls: ['./bodydata.component.css']
 })
-export class BodyComponent implements OnInit {
+export class BodydataComponent implements OnInit {
 
   hasData: any;
   filterData: any;

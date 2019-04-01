@@ -11,16 +11,10 @@ import {AuthService} from '../auth.service';
 })
 export class SigninComponent implements OnInit {
   user:boolean;
-  constructor(public authService: AuthService,private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
     
   }
  
-  logout(){
-    this.user=false;
-    localStorage.setItem('user',JSON.stringify(this.user));
-    this.authService.logout();
-    this.router.navigate(['/login'] );
-  }
 }
